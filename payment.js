@@ -4,9 +4,21 @@ const paymentApiUrl = "https://paynowgateway.com/api/process-payment";
 document.getElementById("payment-form").addEventListener("submit", function(event) {
     event.preventDefault();
 
+    const errorMessages = document.querySelectorAll(".error-message");
+    errorMessages.forEach(message => message.remove());
+
     const cardNumber = document.getElementById("card-number").value;
     const expiryDate = document.getElementById("expiry-date").value;
     const cvv = document.getElementById("cvv").value;
+
+
+    if (!cardNumber || !expiryDate || !cvv) {
+        const errorMessage = document.createElement("div");
+        errorMessage.className = "error-message";
+        errorMessage.textContent = "Please fill in all required fields.";
+        document.getElementById("result").appendChild(errorMessage);
+        return;
+    }
 
     const paymentData = {
         cardNumber,
