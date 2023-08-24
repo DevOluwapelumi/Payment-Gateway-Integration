@@ -9,7 +9,7 @@ Multiple Payment Methods: A versatile payment gateway supports various payment o
 
 Integration: Payment gateways can be seamlessly integrated into various e-commerce platforms, websites, mobile apps, and point-of-sale systems, enabling businesses to offer a consistent payment experience across different channels.
 
-Real-time Authorization: When a customer initiates a payment, the payment gateway communicates with the relevant financial institutions to authorize the transaction in real time. This ensures the availability of funds and minimizes the risk of payment disputes.
+Real-time Authorization: When a customer initiates a payment, the payment gateway communicates with the relevant financial institutions to authorize the transaction in real-time. This ensures the availability of funds and minimizes the risk of payment disputes.
 
 Transaction Logging: Payment gateways maintain detailed records of all transactions, making it easier for merchants to reconcile payments, track sales, and manage refunds or chargebacks.
 
